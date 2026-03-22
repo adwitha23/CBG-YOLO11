@@ -1,6 +1,6 @@
 # Brain Tumor Detection using Custom YOLO11 Architectures
 
-This is the source code for brain tumor detection using modified YOLO11 architectures with GhostNet convolutions, CBAM attention, and BiFPN feature aggregation, validated on two datasets using 5-fold cross-validation. The Figshare training additionally applies L1 regularization via a custom callback to promote weight sparsity given the larger dataset size.
+This is the source code for brain tumor detection using modified YOLO11 architectures with GhostNet convolutions, CBAM attention, and BiFPN feature aggregation, validated on two datasets using 5-fold cross-validation. All augmentation parameters are tuned specifically for MRI data, with colour-based augmentations disabled and scale, flip, and copy-paste augmentations retained to improve generalization across varying tumor sizes and orientations. The Figshare training additionally applies L1 regularization via a custom callback to promote weight sparsity given the larger dataset size.
 
 ## Instructions
 
