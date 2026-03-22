@@ -149,7 +149,7 @@ Run the script:
 python scripts/preprocfig.py
 ```
 
-This will validate all image-label pairs, extract a 15% stratified hold-out test set into a separate `figshare_final_test_set/` directory, and generate the 5-fold split files under `Figshare/5_folds/`. The hold-out test set remains fixed across all folds.
+This will validate all image label pairs, extract a 15% stratified hold out test set into a separate `figshare_final_test_set/` directory, and generate the 5-fold split files under `Figshare/5_folds/`. The hold-out test set remains fixed across all folds.
 
 **Training**
 
