@@ -39,6 +39,7 @@ cp models/11/ghost_yolo11s.yaml venv/lib/python3.12/site-packages/ultralytics/cf
 This step is required. The custom layers (CbamBiFPN_Neck, GhostConv, CBAM, BiFPN) are defined in the `edits/` folder and must replace the corresponding stock Ultralytics files.
 
 ```
+cp edits/conv.py venv/lib/python${PYVER}/site-packages/ultralytics/nn/modules/conv.py
 cp edits/block.py venv/lib/python3.12/site-packages/ultralytics/nn/modules/block.py
 cp edits/tasks.py venv/lib/python3.12/site-packages/ultralytics/nn/tasks.py
 cp edits/__init__.py venv/lib/python3.12/site-packages/ultralytics/nn/modules/__init__.py
